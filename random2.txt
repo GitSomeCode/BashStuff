@@ -3,3 +3,5 @@ Hi, I am second random file. dfdf
 :D
 :)
 :(
+
+some text, too
