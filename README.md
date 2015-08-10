@@ -9,3 +9,14 @@ Helps setup a loose template for a Django (1.8.3v) project. Django version can b
 - Run `pip install -r requirements.txt` to install dependencies.
 - Run `./s [startproject, startapp] [project_name] [location]` to create Django project or app.
 - Run `./m [runserver, makemigrations, migrate]` for manage.py commands. 
+
+## git config executables (c-gc, s-gc, r-gc)
+
+Executable to change git config --global user.name and user.email.
+- Run `./c-gc [user.name] [user.email]` to set user.name, user.email.
+
+Executable to see git config --global user.name and user.email.
+- Run `./s-gc` to view user.name, user.email.
+
+Executable to delete .gitconfig.
+- Run `./r-gc` to delete .gitconfig file from root.
