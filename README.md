@@ -15,8 +15,8 @@ Helps setup a loose template for a Django (1.8.3v) project. Django version can b
 Executable to change git config --global user.name and user.email.
 - Run `./c-gc [user.name] [user.email]` to set user.name, user.email.
 
-Executable to see git config --global user.name and user.email.
-- Run `./s-gc` to view user.name, user.email.
+Executable to view git config --global user.name and user.email.
+- Run `./v-gc` to view user.name, user.email.
 
-Executable to delete .gitconfig.
+Executable to remove .gitconfig.
 - Run `./r-gc` to delete .gitconfig file from root.
