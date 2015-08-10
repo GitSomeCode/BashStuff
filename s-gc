@@ -1,7 +1,3 @@
 #!/bin/bash
 
-echo -n "user.name: " 
-git config --global user.name
-
-echo -n "user.email: " 
-git config --global user.email
+git config --global -l
