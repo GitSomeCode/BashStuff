@@ -1,24 +1,38 @@
 #!/bin/bash 
 
-status=$(git -c color.ui=always status -s)
-branch=$(git rev-parse --abbrev-ref HEAD)
-remote=$(git remote)
 
-echo "* STAGING FILES"
-git add -A
+if [ -n "$1" ]; then
+    
+    echo "commit message is " $1
+    
+    #status=$(git -c color.ui=always status -s)
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    remote=$(git remote)
+    
+    echo "* STAGING FILES"
+    git add random.txt
+    staged=$(git diff --cached --name-only)
+    
+    echo "--------"
+    echo $staged
+    echo "--------"
+    echo ""
 
-echo "--------"
-echo $status
-echo "--------"
-
-echo "* COMMIT WITH MSG: " $1
-echo "--------"
-git commit -m "$(echo -e $1)"
-echo "--------"
+    echo "* COMMIT WITH MSG: " $1
+    echo "--------"
+    git commit -m "$(echo -e $1)"
+    echo "--------"
+    echo ""
 
 
-echo "* PUSH TO BRANCH: " $branch
-echo "--------"
-git push $remote $branch
-echo "--------"
+    echo "* PUSH TO BRANCH: " $branch
+    echo "--------"
+    git push $remote $branch
+    echo "--------"
+else 
+    echo "Commit message required"
+fi
+
+    
+
 
