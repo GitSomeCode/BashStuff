@@ -15,7 +15,7 @@ Bundles git add, commit, push commands together to push files to current working
 - Run `bash gitpush.sh "commit message goes here"`. 
 - Output displays all staged files, git commit details, branch, and git push details.
 
-## git config executables (c-gc, s-gc, r-gc)
+## git config executables (c-gc, v-gc, r-gc)
 
 Executable to change git config --global user.name and user.email.
 - Run `./c-gc [user.name] [user.email]` to set user.name, user.email.
