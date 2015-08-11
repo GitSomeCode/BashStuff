@@ -10,6 +10,11 @@ Helps setup a loose template for a Django (1.8.3v) project. Django version can b
 - Run `./s [startproject, startapp] [project_name] [location]` to create Django project or app.
 - Run `./m [runserver, makemigrations, migrate]` for manage.py commands. 
 
+## gitpush.sh
+Bundles git add, commit, push commands together to push files to current working branch. 
+- Run `bash gitpush.sh "commit message goes here"`. 
+- Output displays all staged files, git commit details, branch, and git push details.
+
 ## git config executables (c-gc, s-gc, r-gc)
 
 Executable to change git config --global user.name and user.email.
