@@ -11,9 +11,10 @@ Helps setup a loose template for a Django (1.8.3v) project. Django version can b
 - Run `./m [runserver, makemigrations, migrate]` for manage.py commands. 
 
 ## gitpush.sh
-Bundles git add, commit, push commands together to push files to current working branch. 
+Bundles git add, commit, push commands together to push files to current working branch.
 - Run `bash gitpush.sh "commit message goes here"`. 
 - Output displays all staged files, git commit details, branch, and git push details.
+- Optional `git status` message commented.
 
 ## git config executables (c-gc, v-gc, r-gc)
 
