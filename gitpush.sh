@@ -3,14 +3,12 @@
 
 if [ -n "$1" ]; then
     
-    echo "commit message is " $1
-    
     #status=$(git -c color.ui=always status -s)
     branch=$(git rev-parse --abbrev-ref HEAD)
     remote=$(git remote)
     
     echo "* STAGING FILES"
-    git add random.txt
+    git add -A
     staged=$(git diff --cached --name-only)
     
     echo "--------"
